@@ -8,7 +8,8 @@ import org.selophane.elements.impl.internal.ElementFactory;
 public class blueSourceHomepagePage {
 
 	public static blueSourceHomepagePage initialize(WebDriver driver) {
-        return ElementFactory.initElements(driver, blueSourceHomepagePage.class);	        
+        return ElementFactory.initElements(driver, blueSourceHomepagePage.class);	
+        
 	}
 	
 	//******************************
