@@ -1,5 +1,6 @@
 package org.orasi.chameleon.blueSource.resources.blueSourceHomepage;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.selophane.elements.*;
@@ -8,8 +9,7 @@ import org.selophane.elements.impl.internal.ElementFactory;
 public class blueSourceHomepagePage {
 
 	public static blueSourceHomepagePage initialize(WebDriver driver) {
-        return ElementFactory.initElements(driver, blueSourceHomepagePage.class);	
-        
+        return ElementFactory.initElements(driver, blueSourceHomepagePage.class);	        
 	}
 	
 	//******************************
@@ -39,8 +39,11 @@ public class blueSourceHomepagePage {
     //Create Textbox for Search Employees
     @FindBy(id = "search-bar")
     public static Textbox txtSearchEmployee;
-   
-
+    
+    //Create Webtable for Employees
+    @FindBy(css = ".table")
+    public static Webtable tblEmployees;
+    
 	//****************************
 	//*** Add Employee Elements***
 	//****************************
